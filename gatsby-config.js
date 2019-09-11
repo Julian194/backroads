@@ -8,7 +8,7 @@ module.exports = {
     description: "yadadadadad",
     twitterUserName: "@MrKaiser92",
     author: "julian kaiser",
-    image: "/defaltBcg.jpeg",
+    image: "/defaultBcg.jpeg",
     siteUrl: "https://adoring-bhaskara-ba6320.netlify.com",
   },
   plugins: [
