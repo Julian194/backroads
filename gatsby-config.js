@@ -9,6 +9,7 @@ module.exports = {
     twitterUserName: "@MrKaiser92",
     author: "julian kaiser",
     image: "/defaltBcg.jpeg",
+    siteUrl: "https://adoring-bhaskara-ba6320.netlify.com",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
