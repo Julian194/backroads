@@ -3,12 +3,20 @@ require("dotenv").config({
 })
 
 module.exports = {
+  siteMetadata: {
+    title: "BackRoads",
+    description: "yadadadadad",
+    twitterUserName: "@MrKaiser92",
+    author: "julian kaiser",
+    image: "/defaltBcg.jpeg",
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-playground`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
