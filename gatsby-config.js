@@ -18,6 +18,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://backroads-julian.netlify.com",
+        sitemap: "https://backroads-julian.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        spaceId: process.env.CONTENTFUL_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
